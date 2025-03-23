@@ -48,6 +48,7 @@ public class Main {
                 if (result == JFileChooser.APPROVE_OPTION) {
                     File file = fileChooser.getSelectedFile();
                     String folder = file.getAbsolutePath();
+                    System.out.println("Absolute Path: " + folder);
 
                     // Update the tree with the selected folder's hierarchy
                     root = new DefaultMutableTreeNode(file.getName());
